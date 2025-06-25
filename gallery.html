@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Солнышко</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>🌞 Солнышко</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="activities.html" class="nav-link">Занятия</a></li>
+                <li><a href="staff.html" class="nav-link">Персонал</a></li>
+                <li><a href="gallery.html" class="nav-link active">Галерея</a></li>
+                <li><a href="news.html" class="nav-link">Новости</a></li>
+                <li><a href="index.html#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Галерея</h1>
+                <p>Посмотрите, как проходят будни наших детей - игры, занятия, праздники и многое другое</p>
+            </div>
+        </section>
+
+        <!-- Gallery Categories -->
+        <section class="gallery-categories">
+            <div class="container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Все фото</button>
+                    <button class="filter-btn" data-category="activities">Занятия</button>
+                    <button class="filter-btn" data-category="holidays">Праздники</button>
+                    <button class="filter-btn" data-category="daily">Будни</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Gallery -->
+        <section class="main-gallery">
+            <div class="container">
+                <div class="gallery-masonry">
+                   
+                    <!-- Activities Photos -->
+                    <div class="gallery-photo" data-category="activities">
+                        <img src="assets/img/gallery/Math.jpg" alt="Занятие по математике">
+                        <div class="photo-overlay">
+                            <h3>Занятие по математике</h3>
+                            <p>Изучаем цифры в игровой форме</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="activities">
+                        <img src="assets/img/gallery/HandWork.webp" alt="Творческая мастерская">
+                        <div class="photo-overlay">
+                            <h3>Творческая мастерская</h3>
+                            <p>Создаем шедевры своими руками</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="activities">
+                        <img src="assets/img/gallery/SingingLessons.jpg" alt="Музыкальное занятие">
+                        <div class="photo-overlay">
+                            <h3>Музыкальное занятие</h3>
+                            <p>Развиваем музыкальный слух</p>
+                        </div>
+                    </div>
+
+                    <!-- Holiday Photos -->
+                    <div class="gallery-photo" data-category="holidays">
+                        <img src="assets/img/gallery/NewYear.jpg" alt="Новогодний утренник">
+                        <div class="photo-overlay">
+                            <h3>Новогодний утренник</h3>
+                            <p>Волшебство Нового года</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="holidays">
+                        <img src="assets/img/gallery/birthday.jpg" alt="День рождения">
+                        <div class="photo-overlay">
+                            <h3>День рождения</h3>
+                            <p>Празднуем вместе</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="holidays">
+                        <img src="assets/img/gallery/8marth.jpg" alt="8 марта">
+                        <div class="photo-overlay">
+                            <h3>Праздник 8 марта</h3>
+                            <p>Поздравляем мам и бабушек</p>
+                        </div>
+                    </div>
+
+                    <!-- Daily Life Photos -->
+                    <div class="gallery-photo" data-category="daily">
+                        <img src="assets/img/gallery/lunch.jpg" alt="Обед">
+                        <div class="photo-overlay">
+                            <h3>Время обеда</h3>
+                            <p>Здоровое питание каждый день</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="daily">
+                        <img src="assets/img/gallery/walking.jpg" alt="Прогулка">
+                        <div class="photo-overlay">
+                            <h3>Прогулка на свежем воздухе</h3>
+                            <p>Активные игры на площадке</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Photos -->
+                    <div class="gallery-photo" data-category="activities">
+                        <img src="assets/img/gallery/English.jpg" alt="Английский язык">
+                        <div class="photo-overlay">
+                            <h3>Изучаем английский</h3>
+                            <p>Языковое развитие с раннего возраста</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="daily">
+                        <img src="assets/img/gallery/playing.jpg" alt="Свободная игра">
+                        <div class="photo-overlay">
+                            <h3>Свободная игра</h3>
+                            <p>Развиваем фантазию и творчество</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-photo" data-category="holidays">
+                        <img src="assets/img/gallery/graduation.jpg" alt="Выпускной">
+                        <div class="photo-overlay">
+                            <h3>Выпускной</h3>
+                            <p>Прощание с детским садом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Частный детский сад "Солнышко". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
